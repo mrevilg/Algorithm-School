@@ -9,3 +9,5 @@ bisect # provides bisection algorithms for sorting lists.
 calendar # Provides a number of date related functions.
 
 codecs # Provides functions for encoding and decoding data.
+
+collections # Provides a variety of useful data structures.
