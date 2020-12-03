@@ -11,3 +11,7 @@ calendar # Provides a number of date related functions.
 codecs # Provides functions for encoding and decoding data.
 
 collections # Provides a variety of useful data structures.
+
+copy # Provides functions for copying data.
+
+csv # Provides functions for reading and writinf CSV files.
