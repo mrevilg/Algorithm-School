@@ -17,3 +17,5 @@ copy # Provides functions for copying data.
 csv # Provides functions for reading and writinf CSV files.
 
 datetime # Provides classes for handling dates and times
+
+fnmatch # Provides functions for matching Unix style filename patterns
