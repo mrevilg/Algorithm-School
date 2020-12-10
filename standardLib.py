@@ -25,3 +25,5 @@ concurrent # Provides asynchronus computation
 glob # Provides functions for matching unix style path patterns 
 
 io # Provides fucntions handling of I/O files
+
+json # Provides functions for reading and writing in JSON formatting
