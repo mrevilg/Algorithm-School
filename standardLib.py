@@ -29,3 +29,5 @@ io # Provides fucntions handling of I/O files
 json # Provides functions for reading and writing in JSON formatting
 
 logging # Provides access to Python's own built-in logging faunctionality
+
+multiprocessing # Allows you to run multiple subprocesses, whilst providing a thread-looking API
