@@ -33,3 +33,5 @@ logging # Provides access to Python's own built-in logging faunctionality
 multiprocessing # Allows you to run multiple subprocesses, whilst providing a thread-looking API
 
 operator # Provides functions implementing the basic Python operators in place of own lamda's
+
+os # Provides access to basic OS functions
