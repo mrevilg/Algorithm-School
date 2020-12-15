@@ -35,3 +35,5 @@ multiprocessing # Allows you to run multiple subprocesses, whilst providing a th
 operator # Provides functions implementing the basic Python operators in place of own lamda's
 
 os # Provides access to basic OS functions
+
+random # Provides functions for providing sudorandom numbers
