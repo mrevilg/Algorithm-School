@@ -37,3 +37,5 @@ operator # Provides functions implementing the basic Python operators in place o
 os # Provides access to basic OS functions
 
 random # Provides functions for providing sudorandom numbers
+
+re # Provides regular expression functionality
