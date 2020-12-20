@@ -43,3 +43,5 @@ re # Provides regular expression functionality
 sched # Provides an event scheduler without multithreading
 
 select # Provides access to select() and poll() functions for creating event loops
+
+shutil # Provides access to high level file functions
