@@ -47,3 +47,5 @@ select # Provides access to select() and poll() functions for creating event loo
 shutil # Provides access to high level file functions
 
 signal # Provides functions for dealing with POSIX signals
+
+tempfile # Provides functions for temporary files and dictionaries
