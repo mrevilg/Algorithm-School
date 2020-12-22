@@ -49,3 +49,5 @@ shutil # Provides access to high level file functions
 signal # Provides functions for dealing with POSIX signals
 
 tempfile # Provides functions for temporary files and dictionaries
+
+threading # provides access to high-level threading functionality
