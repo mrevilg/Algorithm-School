@@ -51,3 +51,7 @@ signal # Provides functions for dealing with POSIX signals
 tempfile # Provides functions for temporary files and dictionaries
 
 threading # provides access to high-level threading functionality
+
+urllib # Provides functins for parsing and handling URLs
+
+uuid # Allows you to generate universally unique identifiers (UUIDs)
