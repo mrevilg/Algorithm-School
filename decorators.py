@@ -13,3 +13,8 @@ def foo():
     return 'bar'
     
 foo = identify(foo)
+
+
+# ... Creating decorators
+
+class Store(object):
