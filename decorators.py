@@ -19,3 +19,5 @@ foo = identify(foo)
 
 class Store(object):
     def get_food(self, username, food):
+        if username != 'admin':
+            raise Exception("This user is not allowed to get food")
