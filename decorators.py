@@ -18,3 +18,4 @@ foo = identify(foo)
 # ... Creating decorators
 
 class Store(object):
+    def get_food(self, username, food):
