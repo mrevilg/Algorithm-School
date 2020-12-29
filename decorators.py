@@ -23,3 +23,9 @@ class Store(object):
             raise Exception("This user is not allowed to get food")
         return self.storage.get(food)
 
+    def put_food(self, username, food):
+        if username != 'admin':
+            raise Exception("This user is not allowed to get food")
+        return self.storage.get(food)
+
+
