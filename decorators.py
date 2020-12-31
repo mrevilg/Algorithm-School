@@ -31,5 +31,5 @@ class Store(object):
 # ... Refactored code using a decorator
 
 def check_is_admin(f):
-
-
+    def wrapper(*args, **kwargs):
+        if kwargs.get('username') != 'admin':
