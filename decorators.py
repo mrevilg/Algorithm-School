@@ -28,4 +28,8 @@ class Store(object):
             raise Exception("This user is not allowed to get food")
         return self.storage.get(food)
 
+# ... Refactored code using a decorator
+
+def check_is_admin(f):
+
 
