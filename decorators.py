@@ -33,3 +33,6 @@ class Store(object):
 def check_is_admin(f):
     def wrapper(*args, **kwargs):
         if kwargs.get('username') != 'admin':
+            raise Exception("This user is not allowed to get or put food")
+        return f(*args, **kwargs)
+        return wrapper
