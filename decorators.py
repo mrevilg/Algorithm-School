@@ -38,3 +38,6 @@ def check_is_admin(f):
     return wrapper
 
 class Store(object):
+    @check_is_admin
+    def get_food(self, username, food):
+        return self.storage.get(food)
