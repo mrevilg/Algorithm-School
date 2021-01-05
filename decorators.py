@@ -41,3 +41,7 @@ class Store(object):
     @check_is_admin
     def get_food(self, username, food):
         return self.storage.get(food)
+
+    @check_is_admin
+    def put_food(self, username, food):
+        self.storage.put(food)
