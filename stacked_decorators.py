@@ -6,3 +6,5 @@ def check_user_in_not(username):
             if kwargs.get('username') == username:
                 raise Exception("This user is not allowd to get food")
             return f(*args, **kwargs)
+        return wrapper
+    return check_user_decorator
