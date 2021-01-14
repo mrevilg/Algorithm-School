@@ -8,3 +8,5 @@ def check_user_in_not(username):
             return f(*args, **kwargs)
         return wrapper
     return check_user_decorator
+
+class Store(object):
