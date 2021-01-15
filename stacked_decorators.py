@@ -10,3 +10,5 @@ def check_user_in_not(username):
     return check_user_decorator
 
 class Store(object):
+    @check_user_in_not("admin")
+    @check_user_in_not("user123")
