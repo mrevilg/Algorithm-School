@@ -12,3 +12,5 @@ def check_user_in_not(username):
 class Store(object):
     @check_user_in_not("admin")
     @check_user_in_not("user123")
+    def get_food(self, username, food):
+        return self.storage.get(food)
