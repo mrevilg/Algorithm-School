@@ -1,3 +1,5 @@
 # AST Walkthrough
 
-import ast 
+import ast
+
+class ReplaceBinOp(ast.NodeTransformer):
