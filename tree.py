@@ -8,3 +8,4 @@ class ReplaceBinOp(ast.NodeTransformer):
         return ast.BinOp(left=node.lefty, op=ast.Add(), right=node.right)
 
 tree = ast.parse("x = 1/3")
+ast.fix_missing_locations(tree)
