@@ -9,3 +9,4 @@ class ReplaceBinOp(ast.NodeTransformer):
 
 tree = ast.parse("x = 1/3")
 ast.fix_missing_locations(tree)
+eval(compile(tree, '', 'exec'))
