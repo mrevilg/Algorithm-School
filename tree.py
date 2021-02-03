@@ -14,3 +14,4 @@ print(ast.dump(tree))
 print(x)
 
 tree = ReplaceBinOp().visit(tree)
+ast.fix_missing_locations(tree)
