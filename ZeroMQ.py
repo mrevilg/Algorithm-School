@@ -7,3 +7,4 @@ def compute():
 
 def worker():
     context = zmq.Context()
+    work_receiver = context.socket(zmq.PULL)
