@@ -8,3 +8,4 @@ def compute():
 def worker():
     context = zmq.Context()
     work_receiver = context.socket(zmq.PULL)
+    work_receiver.connect("tcp://0.0.0.0:5555")
