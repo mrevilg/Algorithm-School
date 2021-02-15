@@ -11,3 +11,5 @@ def worker():
     work_receiver.connect("tcp://0.0.0.0:5555")
     result_sender = context.socket(zmq.PUSH)
     result_sender.connect("tcp://0.0.0.0:5556")
+    poller = zmq.Poller()
+    poller.register(work_receiver, zmq,POLLIN)
