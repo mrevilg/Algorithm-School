@@ -13,3 +13,6 @@ def worker():
     result_sender.connect("tcp://0.0.0.0:5556")
     poller = zmq.Poller()
     poller.register(work_receiver, zmq,POLLIN)
+
+    while True:
+        socks = dict(poller.poll())
