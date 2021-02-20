@@ -17,3 +17,4 @@ def worker():
     while True:
         socks = dict(poller.poll())
         if socks.get(work_receiver) == zmq.POLLIN:
+            obj = work_receiver.recv_pyobj()
