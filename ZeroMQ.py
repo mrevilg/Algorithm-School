@@ -19,3 +19,5 @@ def worker():
         if socks.get(work_receiver) == zmq.POLLIN:
             obj = work_receiver.recv_pyobj()
             result_sender.send_pyobj(obj())
+
+context = zmq.Context()
