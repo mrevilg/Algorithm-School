@@ -21,3 +21,5 @@ def worker():
             result_sender.send_pyobj(obj())
 
 context = zmq.Context()
+# Build a channel to send work to be done
+work_sender = context.socket(zmq.PUSH)
