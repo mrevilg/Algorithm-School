@@ -23,3 +23,4 @@ def worker():
 context = zmq.Context()
 # Build a channel to send work to be done
 work_sender = context.socket(zmq.PUSH)
+work_sender.bind("tcp://0.0.0.0:5555")
