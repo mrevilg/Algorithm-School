@@ -27,3 +27,5 @@ work_sender.bind("tcp://0.0.0.0:5555")
 # Build a channel to receive  computed results
 results_receiver = context.socket(zmq.PULL)
 results_receiver.bind("tcp://0.0.0.0:5556")
+# Start 8 workers
+processes  = []
