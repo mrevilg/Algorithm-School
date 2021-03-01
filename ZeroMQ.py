@@ -30,3 +30,4 @@ results_receiver.bind("tcp://0.0.0.0:5556")
 # Start 8 workers
 processes  = []
 for x in range(8):
+    p = multiprocessing.Process(target=worker)
