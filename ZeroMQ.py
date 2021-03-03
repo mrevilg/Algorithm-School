@@ -33,3 +33,5 @@ for x in range(8):
     p = multiprocessing.Process(target=worker)
     p.start()
     processes.append(p)
+# Send 8 jobs
+for x in range(8):
