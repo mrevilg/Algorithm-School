@@ -35,3 +35,5 @@ for x in range(8):
     processes.append(p)
 # Send 8 jobs
 for x in range(8):
+    work_sender.send_pyobj(compute)
+# Read 8 results
