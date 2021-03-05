@@ -37,3 +37,6 @@ for x in range(8):
 for x in range(8):
     work_sender.send_pyobj(compute)
 # Read 8 results
+
+results = []
+for x in range(8):
