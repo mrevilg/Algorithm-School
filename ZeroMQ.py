@@ -40,3 +40,5 @@ for x in range(8):
 
 results = []
 for x in range(8):
+    results.append(results_receiver.recv_pyobj())
+# Terminate all processes
