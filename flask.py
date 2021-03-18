@@ -6,3 +6,5 @@ import select
 app = flask.Flask(__name__)
 
 def stream_messages(channel):
+    conn = psycopg2.connect(database='mydatabase', user='mydatabase',
+    password='mydatabase', host='localhost')
