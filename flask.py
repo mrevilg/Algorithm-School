@@ -10,3 +10,4 @@ def stream_messages(channel):
     conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
 
     curs = conn.cursor()
+    curs.execute("LISTEN channel_%d;" % int(channel))
