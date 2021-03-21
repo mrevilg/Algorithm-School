@@ -11,3 +11,6 @@ def stream_messages(channel):
 
     curs = conn.cursor()
     curs.execute("LISTEN channel_%d;" % int(channel))
+
+    while True:
+        select.select([conn], [], [])
