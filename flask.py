@@ -14,3 +14,5 @@ def stream_messages(channel):
 
     while True:
         select.select([conn], [], [])
+        conn.poll()
+        while conn.notifies:
