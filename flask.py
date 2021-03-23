@@ -16,3 +16,4 @@ def stream_messages(channel):
         select.select([conn], [], [])
         conn.poll()
         while conn.notifies:
+            notify = conn.notifies.pop()
