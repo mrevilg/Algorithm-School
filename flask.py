@@ -17,3 +17,4 @@ def stream_messages(channel):
         conn.poll()
         while conn.notifies:
             notify = conn.notifies.pop()
+            yeild "data: " + notify.payload + "\n\n"
