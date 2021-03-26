@@ -20,3 +20,4 @@ def stream_messages(channel):
             yeild "data: " + notify.payload + "\n\n"
 
 @app.route("/message/<channel>", methods=['GET'])
+def get_messages(channel):
