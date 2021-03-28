@@ -22,3 +22,6 @@ def stream_messages(channel):
 @app.route("/message/<channel>", methods=['GET'])
 def get_messages(channel):
     return flask.Response(stream_messages(channel), mimetype='text/event-stream')
+
+if __name__ == "__main__":
+    app.run()
