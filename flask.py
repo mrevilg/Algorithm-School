@@ -17,7 +17,7 @@ def stream_messages(channel):
         conn.poll()
         while conn.notifies:
             notify = conn.notifies.pop()
-            yeild "data: " + notify.payload + "\n\n"
+            yield "data: " + notify.payload + "\n\n"
 
 @app.route("/message/<channel>", methods=['GET'])
 def get_messages(channel):
